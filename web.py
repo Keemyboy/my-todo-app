@@ -1,6 +1,7 @@
 import streamlit as st
+#in order to publish app to cloud you need a new folder with only needed code inside
 #to get the function apps import it, then create a varibale todos and set it equal to get todos
-import
+import functions
 
 todos = functions.get_todos()
 
@@ -36,4 +37,5 @@ st.text_input(label='Enter a todo: ', placeholder="Add new todo...",
               on_change=add_todo, key='new_todo')
 
 #to run this app go to terminal and type streamlit run filename.py
-
+# pip freeze > requirements.txt this will tell the server all the packages it needs to run the app
+#do all this in the terminal
